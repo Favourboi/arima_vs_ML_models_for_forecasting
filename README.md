@@ -27,7 +27,7 @@ The primary objective of this project is to evaluate the effectiveness of tradit
    - **Machine Learning Models**:  
      - Linear Regression  
      - Random Forest Regressor  
-     - Convictional Neural Network (SVR)  
+     - Convolutional Neural Network (CNN)  
 
 3. **Evaluation Metrics**  
    - Mean Absolute Error (MAE)  
