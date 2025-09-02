@@ -23,21 +23,18 @@ The primary objective of this project is to evaluate the effectiveness of tradit
    - Exploratory Data Analysis (EDA) with plots and descriptive statistics.  
 
 2. **Modeling**  
-   - **ARIMA**: Captures autocorrelation, trends, and seasonality.  
+   - **ARIMA**  
    - **Machine Learning Models**:  
      - Linear Regression  
      - Random Forest Regressor  
-     - Support Vector Regression (SVR)  
-     - (Other models can be added for extension)  
+     - Convictional Neural Network (SVR)  
 
 3. **Evaluation Metrics**  
    - Mean Absolute Error (MAE)  
    - Root Mean Squared Error (RMSE)  
    - R² Score  
 
-4. **Visualization**  
-   - Actual vs Predicted stock price trends.  
-   - Residual analysis.  
+4. **Visualization**   
    - Model comparison plots.  
 
 ---
