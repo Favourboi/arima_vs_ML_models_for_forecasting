@@ -1,76 +1,68 @@
-Stock Price Forecasting: ARIMA vs Machine Learning Models
+# ARIMA vs Machine Learning Models: Forecasting NGX Stock Prices
 
-This project explores the comparative performance of statistical time series models and machine learning algorithms in forecasting stock prices on the Nigerian Exchange (NGX). Using Zenith Bank’s historical stock data (2000–2025), we evaluate how well different approaches capture price trends, seasonality, and volatility.
+This repository contains a comprehensive analysis and forecasting project that compares **ARIMA (AutoRegressive Integrated Moving Average)** models with modern **machine learning techniques** for predicting stock prices of companies listed on the **Nigerian Exchange (NGX)**.  
 
-📌 Project Overview
+The primary objective of this project is to evaluate the effectiveness of traditional time series models versus machine learning approaches in capturing stock price trends, patterns, and volatility over time.
 
-Forecasting stock prices is a critical task in financial markets, influencing investment strategies, risk management, and policy decisions. Traditional models such as ARIMA are well-established for handling time series, but the rise of machine learning offers alternative perspectives for predictive modeling.
+---
 
-This project compares:
+## 📂 Project Structure
 
-ARIMA (Auto-Regressive Integrated Moving Average) – a classical statistical model designed for time-dependent data.
+- **NGX Stocks 2000 - 2025.csv**  
+  Historical dataset of NGX stock prices from 2000 to 2025.  
 
-Machine Learning Models – trained to capture non-linear patterns in historical stock data.
+- **arima_vs_ml_models.ipynb**  
+  Jupyter Notebook with step-by-step analysis, preprocessing, visualization, and model comparison.  
 
-The comparison aims to provide insights into the strengths and weaknesses of both approaches when applied to real-world financial forecasting.
+---
 
-📊 Dataset
+## ⚡ Methodology
 
-Source: NGX Stocks Dataset (2000–2025)
+1. **Data Preparation**  
+   - Cleaning, handling missing values, and formatting time series data.  
+   - Exploratory Data Analysis (EDA) with plots and descriptive statistics.  
 
-Focus Column: Price (Zenith Bank stock closing prices)
+2. **Modeling**  
+   - **ARIMA**: Captures autocorrelation, trends, and seasonality.  
+   - **Machine Learning Models**:  
+     - Linear Regression  
+     - Random Forest Regressor  
+     - Support Vector Regression (SVR)  
+     - (Other models can be added for extension)  
 
-Features: Daily historical stock prices, including open, high, low, close, and volume.
+3. **Evaluation Metrics**  
+   - Mean Absolute Error (MAE)  
+   - Root Mean Squared Error (RMSE)  
+   - R² Score  
 
-⚙️ Methodology
+4. **Visualization**  
+   - Actual vs Predicted stock price trends.  
+   - Residual analysis.  
+   - Model comparison plots.  
 
-Data Preprocessing
+---
 
-Cleaning missing values
+## 🚀 Key Findings
 
-Time-series indexing
+- ARIMA models are effective for capturing short-term dependencies but may struggle with nonlinear relationships.  
+- Machine learning models provide flexibility and can capture complex patterns, but they often require more tuning and larger datasets.  
+- Combining both approaches may yield improved forecasting performance.  
 
-Train-test split for evaluation
+---
 
-Modeling
+## 🛠️ Technologies Used
 
-ARIMA model fitting and residual diagnostics
+- Python  
+- Pandas, NumPy  
+- Matplotlib, Seaborn  
+- Scikit-learn  
+- Statsmodels  
 
-Machine learning models (baseline regressors, advanced learners)
+---
 
-Evaluation Metrics
+## 📌 How to Use
 
-Mean Absolute Error (MAE)
-
-Root Mean Squared Error (RMSE)
-
-Forecast visualization
-
-Comparison & Analysis
-
-Strengths and limitations of each approach
-
-Insights for financial decision-making
-
-📈 Results & Insights
-
-ARIMA excels in short-term linear forecasting.
-
-Machine learning models can capture non-linear trends and adapt better to complex behaviors.
-
-Hybrid approaches may provide stronger predictive accuracy in financial contexts.
-
-🚀 Technologies Used
-
-Python
-
-pandas, numpy, matplotlib, seaborn
-
-statsmodels (ARIMA)
-
-scikit-learn (ML models)
-
-📬 Author
-
-Favour Ugorji
-Data Scientist | Financial Data Analytics Enthusiast
+1. Clone this repository:  
+   ```bash
+   git clone https://github.com/Favourboi/arima_vs_ML_models_for_forecasting.git
+   cd arima_vs_ML_models
